@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="condiv">
+    <div class="container">
+        <h1>A SIMPLE VIDEO GALLERY</h1>
+            <div class="row">
+                    <div class="col">
+                            <div class="feature-img">
+                                <img src="/images/pexels-karolina-grabowska-7269693.jpg" alt="loading" width="100%">
+                                <img src="/images/video-play-icon-11390 (1).png" class="play-btn" alt="" width="100%" onclick="openVideo('/media/1.mp4')">
+                            </div>
+                    </div>
+
+                   <div class="col">
+                                <div class="small-img-row">
+                                    <div class="small-img">
+                                        <img src="/images/pexels-ksenia-chernaya-7301144.jpg" alt="loading" width="100%" >
+                                        <img src="/images/video-play-icon-11390 (1).png" class="play-btn" alt="" width="100%"  onclick="openVideo('/media/1.mp4') " >
+                                    </div>
+                                    <p>
+                                        Basicaly a set of videos showing a video gallery
+                                    </p>
+                                </div>   
+
+                                    <div class="small-img-row">
+                                        <div class="small-img">
+                                            <img src="/images/pexels-ksenia-chernaya-7301351.jpg" alt="loading" width="100%">
+                                            <img src="/images/video-play-icon-11390 (1).png" class="play-btn" alt="" width="100%"  onclick="openVideo('/media/1.mp4')" >
+                                        </div>
+                                        <p>
+                                            Basicaly a set of videos showing a video gallery
+                                        </p>
+                                    </div>    
+
+                                        <div class="small-img-row">
+                                            <div class="small-img">
+                                                <img src="/images/pexels-ksenia-chernaya-7301353.jpg" alt="loading" width="100%">
+                                                <img src="/images/video-play-icon-11390 (1).png" class="play-btn" alt="" width="100%"  onclick="openVideo('/media/1.mp4')" >
+                                            </div>
+                                            <p>
+                                                Basicaly a set of videos showing a video gallery
+                                            </p>
+                                        </div>    
+                </div>
+        </div>
+    </div>
+
+    <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay id="myVideo">
+            <source src="/media/1.mp4" type="video/mp4">
+        </video> 
+        <img src="/images/cancel.png" alt="" class="close-btn" onclick="stopVideo()">
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footerContainer">
+            <p class="copyright">© Nobi's Project</p>
+        </div>
+    </footer>
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="app.js"></script>
+</body>
+</html>
