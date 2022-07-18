@@ -34,6 +34,8 @@ body{
     width: 90%;
     margin: auto;
     position: relative;
+    transform:translateY(1);
+   
 }
 .feature-img:hover{
     transform: scale(1.1);
